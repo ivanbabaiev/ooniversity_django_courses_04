@@ -28,7 +28,7 @@ DEBUG = False
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = ['ivanbabaiev.pythonanywhere.com']
-#ALLOWED_HOSTS = ['127.0.0.1']
+# ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
@@ -98,6 +98,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/bootstrap'), )
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'), )
+
 
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
