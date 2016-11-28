@@ -27,8 +27,8 @@ DEBUG = False
 
 TEMPLATE_DEBUG = True
 
-# ALLOWED_HOSTS = ['ivanbabaiev.pythonanywhere.com']
-ALLOWED_HOSTS = ['127.0.0.1']
+# ALLOWED_HOSTS = ['target.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -92,18 +92,51 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/bootstrap'), )
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'), )
 
+# ADMINS = (
+#         ('Nikolay Borovenskiy', 'nikolay.borovenskiy@gmail.com'),
+#         ('Ivan Babaiev', 'ivanbabaiev@gmail.com'),
+#     )
+#
+# EMAIL_HOST = 'mx1.mirohost.net'
+#
+# EMAIL_PORT = 25
+#
+# EMAIL_HOST_USER = 'pybursa@mdcexpert.com'
+#
+# EMAIL_HOST_PASSWORD = 'x9AgUkx6'
+#
+# SERVER_EMAIL = 'pybursa@mdcexpert.com'
+#
+# DEFAULT_FROM_EMAIL = 'pybursa@mdcexpert.com'
+#
+# EMAIL_SUBJECT_PREFIX = '[My Feedback] '
+#
+# EMAIL_USE_TLS = False
+
+
+# EMAIL_BACKEND = "ivanbabaiev@gmail.com"
+# # SENDGRID_API_KEY = "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"
+# SENDGRID_API_KEY = "WNOS0Cw7QwCqOXvBggg9RQ"
+
+# from django.core.mail import send_mail
+# from django.core.mail import EmailMultiAlternatives
+#
+# send_mail("Your Subject", "This is a simple text email body.",
+#   "Ivan Babaiev <hello@yamilasusta.com>", ["yamil@sendgrid.com"])
+
 
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
 ADMINS = (
-        ('admin', "admin@admin.com"))
+    ('Nikolay Borovenskiy', 'nikolay.borovenskiy@gmail.com'),
+    ('Ivan Babaiev', 'ivanbabaiev@gmail.com'), )
 
 # debug
 LOGGING = {
